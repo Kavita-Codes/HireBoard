@@ -1,0 +1,167 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  margin:0;
+  font-family:Inter;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  background:
+  radial-gradient(circle at 20% 20%, #0f172a, #020617 60%);
+  color:white;
+}
+
+.header{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:20px 40px;
+  background:rgba(0,0,0,.6);
+  backdrop-filter:blur(12px);
+}
+
+.logo{
+    width:35px;
+    border-radius: 50%;
+}
+h1{color:#22c55e}
+
+.hero{
+  text-align:center;
+  padding:40px 20px;
+  animation:fadeUp .8s ease;
+}
+
+.hero h2{
+  font-size:32px;
+  margin-bottom:10px;
+}
+
+.hero p{opacity:.6}
+
+.form-card{
+  width:70%;
+  margin:auto;
+  padding:20px;
+  border-radius:14px;
+
+  background:rgba(255,255,255,.05);
+  backdrop-filter:blur(14px);
+  border:1px solid rgba(255,255,255,.1);
+
+  display:flex;
+  gap:12px;
+  justify-content:center;
+
+  animation:fadeUp 1s ease;
+}
+
+input,select{
+  padding:12px;
+  border:none;
+  border-radius:6px;
+  background:#020617;
+  color:white;
+}
+
+button{
+  background:#22c55e;
+  border:none;
+  padding:12px 20px;
+  border-radius:6px;
+  cursor:pointer;
+  font-weight:600;
+  transition:.3s;
+}
+
+button:hover{
+  transform:scale(1.05);
+  background:#16a34a;
+}
+
+.empty{
+  text-align:center;
+  margin:40px;
+  opacity:.7;
+}
+
+.table-wrapper{
+  width:80%;
+  margin:20px auto;
+  animation:fadeUp .6s ease;
+}
+
+.table-scroll{
+  max-height:320px;
+  overflow-y:auto;
+  border-radius:10px;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+  background:#020617;
+}
+
+th,td{
+  padding:14px;
+  border-bottom:1px solid rgba(255,255,255,.05);
+}
+
+tr:hover{
+  background:rgba(255,255,255,.03);
+}
+
+.stats{
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:10px;
+  color:#22c55e;
+}
+
+.footer{
+  margin-top:auto;
+  padding:16px;
+  text-align:center;
+  background:rgba(0,0,0,.6);
+  backdrop-filter:blur(10px);
+  font-size:14px;
+  opacity:.6;
+}
+
+.avatar{
+  width:38px;          
+  height:38px;
+  border-radius:50%;  
+  object-fit:cover;    
+  margin-right:12px;
+  border:2px solid #22c55e;
+  flex-shrink:0;
+}
+
+.candidate-cell{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+@keyframes fadeUp{
+  from{
+    opacity:0;
+    transform:translateY(20px);
+  }
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.hidden{display:none}

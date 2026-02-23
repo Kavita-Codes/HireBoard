@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HireBoard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header">
+  <img src="assets/logo.jpg" class="logo">
+  <h1>HireBoard</h1>
+</header>
+
+<main class="main">
+
+  <section class="hero">
+    <h2>Build Your Hiring Pipeline</h2>
+    <p>Track candidates beautifully & efficiently</p>
+  </section>
+
+  <section class="form-card">
+    <input id="name" placeholder="Candidate Name">
+    <input id="role" placeholder="Role">
+
+    <select id="status">
+      <option>Applied</option>
+      <option>Interview</option>
+      <option>Selected</option>
+      <option>Rejected</option>
+    </select>
+
+    <button id="addBtn">Add Candidate</button>
+  </section>
+
+  <section id="emptyState" class="empty">
+    <h3>No Candidates Yet</h3>
+    <p>Add your first candidate to begin</p>
+  </section>
+
+  <section id="tableSection" class="table-wrapper hidden">
+    <div class="stats">
+      <span id="total"></span>
+      <span id="selected"></span>
+    </div>
+
+    <div class="table-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Candidate</th>
+            <th>Role</th>
+            <th>Status</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+ © 2026 HireBoard ... Candidate Management Dashboard
+</footer>
+
+<script type="module" src="js/main.js"></script>
+
+</body>
+</html>
